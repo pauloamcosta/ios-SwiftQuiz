@@ -12,6 +12,10 @@
 		29B9BD0E216EE820001B9F50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B9BD0C216EE820001B9F50 /* Main.storyboard */; };
 		29B9BD10216EE820001B9F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29B9BD0F216EE820001B9F50 /* Assets.xcassets */; };
 		29B9BD13216EE820001B9F50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B9BD11216EE820001B9F50 /* LaunchScreen.storyboard */; };
+		29E8F08421743C01004246B0 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E8F08321743C01004246B0 /* QuizViewController.swift */; };
+		29E8F08621743C2C004246B0 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E8F08521743C2C004246B0 /* ResultViewController.swift */; };
+		29E8F08821743F4E004246B0 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E8F08721743F4E004246B0 /* Quiz.swift */; };
+		29E8F08A21743F7A004246B0 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E8F08921743F7A004246B0 /* QuizManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		29B9BD0F216EE820001B9F50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29B9BD12216EE820001B9F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29B9BD14216EE820001B9F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29E8F08321743C01004246B0 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		29E8F08521743C2C004246B0 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		29E8F08721743F4E004246B0 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		29E8F08921743F7A004246B0 /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,10 @@
 				29B9BD08216EE820001B9F50 /* AppDelegate.swift */,
 				29B9BD0A216EE820001B9F50 /* ViewController.swift */,
 				29B9BD0C216EE820001B9F50 /* Main.storyboard */,
+				29E8F08721743F4E004246B0 /* Quiz.swift */,
+				29E8F08921743F7A004246B0 /* QuizManager.swift */,
+				29E8F08321743C01004246B0 /* QuizViewController.swift */,
+				29E8F08521743C2C004246B0 /* ResultViewController.swift */,
 				29B9BD0F216EE820001B9F50 /* Assets.xcassets */,
 				29B9BD11216EE820001B9F50 /* LaunchScreen.storyboard */,
 				29B9BD14216EE820001B9F50 /* Info.plist */,
@@ -135,8 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E8F08421743C01004246B0 /* QuizViewController.swift in Sources */,
+				29E8F08821743F4E004246B0 /* Quiz.swift in Sources */,
 				29B9BD0B216EE820001B9F50 /* ViewController.swift in Sources */,
 				29B9BD09216EE820001B9F50 /* AppDelegate.swift in Sources */,
+				29E8F08A21743F7A004246B0 /* QuizManager.swift in Sources */,
+				29E8F08621743C2C004246B0 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.pauloamcosta.swiftQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.pauloamcosta.swiftQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
